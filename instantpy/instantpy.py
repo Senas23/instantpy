@@ -2,8 +2,8 @@ import json
 import requests
 import re
 from time import sleep
-
-
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 def autologin(func):
     # @wraps(func)
